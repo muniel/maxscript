@@ -1,4 +1,4 @@
-fn fn_ui_create =
+fn create_ui =
 (
 	/*
 	Ui create.
@@ -25,7 +25,7 @@ fn fn_ui_create =
 		str += "button bt_" + name_ctrl + " \"" + name_ctrl + "\"\n"
 		-- Event handlers & select procces.
 		str += "on bt_" + name_ctrl + " pressed do (\n"
-		str += "fn_sel_obj \"" + name_ctrl + "\""
+		str += "select_obj \"" + name_ctrl + "\""
 		str += ")\n"
 	)
 	str += ")\n"
@@ -33,7 +33,7 @@ fn fn_ui_create =
 	createDialog (execute str) width:100 height:(ctrl_count * btn_height + ui_space * (ctrl_count - 1) + ui_space * 2)
 )
 
-fn fn_sel_obj rig_name =
+fn select_obj rig_name =
 (
 	/*
 	Execute the select process by the key pressed.
@@ -60,4 +60,4 @@ fn fn_sel_obj rig_name =
 	catch("error")
 )
 
-fn_ui_create()
+create_ui()
