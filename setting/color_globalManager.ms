@@ -18,13 +18,11 @@ struct GlobalColorManager
 	
 	fn get_wire_color  =
 	(
-		try
-		(
+		try(
 			if selection.count == 1 then(return $.wirecolor)
 			else(return (color 0 0 0))
 		)
-		catch
-		(
+		catch(
 			return (color 0 0 0)
 		)
 	)
@@ -33,14 +31,12 @@ struct GlobalColorManager
 	wire_col = GlobalColorManager.get_wire_color()
 	,
 
-	fn math_color_float a =
-	(
+	fn math_color_float a =(
 		return (a /255)
 	)
 	,
 
-	fn math_color_integer a =
-	(
+	fn math_color_integer a =(
 		return ((255 * a) as integer)
 	)
 	,
