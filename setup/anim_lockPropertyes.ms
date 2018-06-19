@@ -1,3 +1,7 @@
+/*
+Lock transform controller at track view.
+*/
+
 struct TransformControllerLock
 (
 	fn edit_trackview_filter class_prs =
@@ -37,7 +41,7 @@ struct TransformControllerLock
 		
 		if judge_bool == "true" then
 		(
-			lockedTracksMan.SetLocks true theAnims theClients theSubNums false
+			lockedTracksMan.SetLocks true theAnims theClients theSubNums true
 		)
 		else if judge_bool == "false" then
 		(
