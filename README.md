@@ -1,3 +1,3 @@
 # maxscript
 
-Create the simple scripts on this library.
+Create the simple scripts in this library.
