@@ -1,0 +1,2 @@
+--Print all elements of array in the MAXscript Listener.
+with PrintAllElements on (print <Array> #nomap;ok)
